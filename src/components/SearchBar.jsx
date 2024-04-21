@@ -3,7 +3,7 @@ import { IoSearch } from 'react-icons/io5'
 
 const SearchBar = () => {
   return (
-    <div className='px-3 py-2'>
+    <div className='py-2'>
       <div className='flex gap-2 items-center rounded-md bg-primaryDark px-4 py-2'>
         <div className='text-white '>
             <IoSearch />

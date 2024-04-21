@@ -1,6 +1,6 @@
-import React from 'react'
-import  Logo from '../assets/logo.svg'
-import Avatar from '../assets/image-avatar.png'
+//import React from 'react'
+import  Logo from '../../public/assets/logo.svg'
+import Avatar from '../../public/assets/image-avatar.png'
 import { Link } from 'react-router-dom'
 import { FaBookmark } from "react-icons/fa6";
 import { MdLocalMovies } from 'react-icons/md';
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
         <aside className="hidden lg:block w-20 h-screen bg-primaryDark  ">
-            <div className="p-6 bg-secondaryDark h-screen flex flex-col items-center gap-28 ">
+            <div className="p-6 bg-secondaryDark flex flex-col items-center gap-28 rounded-xl ">
                 <div className="flex items-center mb-8">
                     <img className="h-10" src={Logo} alt="Logo" />
                 </div>
