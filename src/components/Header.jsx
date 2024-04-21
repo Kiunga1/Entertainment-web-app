@@ -1,7 +1,7 @@
 //import React from 'react'
 import  Logo from '../../public/assets/logo.svg'
 import Avatar from '../../public/assets/image-avatar.png'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { FaBookmark } from "react-icons/fa6";
 import { MdLocalMovies } from 'react-icons/md';
 import {PiTelevisionLight } from 'react-icons/pi';
@@ -16,18 +16,18 @@ const Header = () => {
                     <img className="h-10" src={Logo} alt="Logo" />
                 </div>
                 <nav className="flex flex-col space-y-4">
-                    <Link to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
+                    <NavLink to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
                         <TbCategory />
-                    </Link>
-                    <Link to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
+                    </NavLink>
+                    <NavLink to="/movies" className="text-gray-400 text-xl hover:text-white active:text-white">
                         <MdLocalMovies />
-                    </Link>
-                    <Link to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
+                    </NavLink>
+                    <NavLink to="/tvseries" className="text-gray-400 text-xl hover:text-white active:text-white">
                         <PiTelevisionLight />
-                    </Link>
-                    <Link to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
+                    </NavLink>
+                    <NavLink to="/bookmarkmovies" className="text-gray-400 text-xl hover:text-white active:text-white">
                         <FaBookmark />
-                    </Link>
+                    </NavLink>
                 </nav>
                 <div className="flex-1">
                     <img className="h-10 rounded-full" src={Avatar} alt="User Avatar" />
@@ -40,18 +40,18 @@ const Header = () => {
                 <img className='h-10' src={Logo} alt="Logo" />
             </div>
             <nav className='flex items-center space-x-4'>
-                <Link to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
+                <NavLink to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
                     <TbCategory  fill='white '/>
-                </Link>
-                <Link to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'>
+                </NavLink>
+                <NavLink to="/movies" className='text-gray-400 text-2xl hover:text-white active:text-white'>
                     <MdLocalMovies fill='white '/>
-                </Link>
-                <Link to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
+                </NavLink>
+                <NavLink to="/tvseries" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
                     <PiTelevisionLight />
-                </Link>
-                <Link to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'>
+                </NavLink>
+                <NavLink to="/bookmarkmovies" className='text-gray-400 text-2xl hover:text-white active:text-white'>
                     <FaBookmark />
-                </Link>
+                </NavLink>
             </nav>
             <div className=''>
                 <img  className='h-10 rounded-full' src={Avatar} alt="user-avatar" />
