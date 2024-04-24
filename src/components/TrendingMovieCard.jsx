@@ -1,7 +1,20 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
 import { MdLocalMovies } from 'react-icons/md'
+import { useBookmarks } from '../context/BookmarkContext';
+import { FaBookmark } from 'react-icons/fa';
+import { CiBookmark } from 'react-icons/ci';
+
 const TrendingMovieCard = ({imageUrl, title, rating, year, category}) => {
+  const { bookmarks, toggleBookmark } = useBookmarks();
+  // Check if the movie is bookmarked
+
+  const isBookmarked = bookmarks.includes(title); 
+  // Toggle the bookmark status
+  const handleToggleBookmark = () => {
+    toggleBookmark(title); 
+  };
+
   return (
     <div className="bg-primaryDark py-4 rounded-md shadow-md relative shrink-0">
       <img src={imageUrl} alt={title} className="rounded-md h-36 w-60 md:h-56 md:w-auto object-cover" />
@@ -16,6 +29,13 @@ const TrendingMovieCard = ({imageUrl, title, rating, year, category}) => {
         </div>
         <h4 className="text-md font-bold pb-2 text-white px-4">{title}</h4>
       </div>
+      <div className='bg-primaryDark bg-opacity-75 absolute p-2 rounded-full top-6 right-4 '>
+          {isBookmarked ? (
+            <FaBookmark className='text-white' onClick={handleToggleBookmark} />
+          ) : (
+            <CiBookmark className='fill-white' onClick={handleToggleBookmark} />
+          )}
+        </div>
     </div>
   )
 }
