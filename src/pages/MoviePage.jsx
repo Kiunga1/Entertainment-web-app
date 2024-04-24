@@ -20,7 +20,10 @@ const MoviesPage = () => {
     <div className='p-4'>
       <h1 className='text-xl text-white'>Movies</h1>
       {/* Use the SearchBar component */}
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar 
+        handleSearch={handleSearch} 
+        placeholder="Search for a movie"
+      />
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
         {/* Render MovieCard for each movie */}
         {filteredMovies.map((movie, index) => (

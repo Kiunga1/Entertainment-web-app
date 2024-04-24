@@ -21,7 +21,10 @@ const Home = () => {
 
   return (
     <div className='px-4'>
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar 
+        handleSearch={handleSearch} 
+        placeholder="Search for a movie or TV series"
+      />
       <h2 className='text-white text-xl mt-4'>Trending</h2>
       <div className='flex gap-5 overflow-x-scroll'>
         {/* Map over the trendingMovies and rendering trendingMovie item cards. */}

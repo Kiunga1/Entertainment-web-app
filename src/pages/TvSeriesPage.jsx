@@ -20,7 +20,10 @@ const TvSeriesPage = () => {
     <div className='p-4'>
       <h1 className='text-xl text-white pb-3'>TV Series</h1>
       {/* Use the SearchBar component */}
-      <SearchBar handleSearch={handleSearch} />
+      <SearchBar 
+        handleSearch={handleSearch} 
+        placeholder="Search for a Tv series"
+      />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {/* Render MovieCard for each TV series */}
         {filteredSeries.map((seriesItem, index) => (

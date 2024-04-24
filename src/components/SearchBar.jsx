@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IoSearch } from 'react-icons/io5';
 
-const SearchBar = ({ handleSearch }) => {
+const SearchBar = ({ handleSearch, placeholder }) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleChange = e => {
@@ -18,7 +18,7 @@ const SearchBar = ({ handleSearch }) => {
         </div>
         <input 
             type="text" 
-            placeholder="Search for a movie or Tv series"
+            placeholder={placeholder}
             value={searchQuery}
             onChange={handleChange}
             className='p-2 border-0 outline-none w-full placeholder:text-primaryGray text-white placeholder:text-xs placeholder-opacity-50 bg-primaryDark'
