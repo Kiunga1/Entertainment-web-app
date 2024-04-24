@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Kiunga1/Entertainment-web-app)
-- Live Site URL: [](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://entertainment-web-app-tau-seven.vercel.app/)
 
 ## My process
 

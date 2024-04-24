@@ -12,9 +12,9 @@ const Header = () => {
     <>
         <aside className="hidden lg:block w-20 h-screen bg-primaryDark  ">
             <div className="p-6 bg-secondaryDark flex flex-col items-center gap-28 rounded-xl ">
-                <div className="flex items-center mb-8">
+                <Link to='/' className="flex items-center mb-8">
                     <img className="h-10" src={Logo} alt="Logo" />
-                </div>
+                </Link>
                 <nav className="flex flex-col space-y-4">
                     <NavLink to="#" className="text-gray-400 text-xl hover:text-white active:text-white">
                         <TbCategory />
@@ -36,15 +36,15 @@ const Header = () => {
             
         </aside>
         <header className='lg:hidden flex justify-between items-center h-16 bg-secondaryDark px-6'>
-            <div className='flex items-center'>
+            <Link to='/' className='flex items-center'>
                 <img className='h-10' src={Logo} alt="Logo" />
-            </div>
+            </Link>
             <nav className='flex items-center space-x-4'>
-                <NavLink to="#" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
-                    <TbCategory  fill='white '/>
+                <NavLink to="/" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
+                    <TbCategory />
                 </NavLink>
                 <NavLink to="/movies" className='text-gray-400 text-2xl hover:text-white active:text-white'>
-                    <MdLocalMovies fill='white '/>
+                    <MdLocalMovies />
                 </NavLink>
                 <NavLink to="/tvseries" className='text-gray-400 text-2xl hover:text-white active:text-white'> 
                     <PiTelevisionLight />
