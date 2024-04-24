@@ -4,8 +4,8 @@ import Home from "./pages/Home"
 import Header from './components/Header'
 // import SearchBar from './components/SearchBar'
 import TvSeriesPage from './pages/TvSeriesPage'
-import BookmarkedMovies from './pages/BookmarkedMovies'
 import MoviePage from './pages/MoviePage'
+import BookmarkedPage from './pages/BookmarkedPage'
 
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
             <Route exact path='/' element={<Home/>} />
             <Route path='/movies' element= {<MoviePage/>} />
             <Route path="/tvseries" element={<TvSeriesPage/>} />
-            <Route path="/bookmarkmovies" element={<BookmarkedMovies/>} />
+            <Route path="/bookmarkmovies" element={<BookmarkedPage/>} />
           </Routes>
         </div>
         
