@@ -25,7 +25,7 @@ const Home = () => {
         handleSearch={handleSearch} 
         placeholder="Search for a movie or TV series"
       />
-      <h2 className='text-white text-xl mt-4'>Trending</h2>
+      <h2 className='text-white text-xl mt-6'>Trending</h2>
       <div className='flex gap-5 overflow-x-scroll'>
         {/* Map over the trendingMovies and rendering trendingMovie item cards. */}
         {trendingMovies.map((movie, index) => (
@@ -39,7 +39,7 @@ const Home = () => {
           />
         ))}
       </div>
-      <h2 className='text-white text-xl mt-4'>Movies</h2>
+      <h2 className='text-white text-xl mt-6'>Movies</h2>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
         {/* show all movies and series/ only show item searched by user. */}
         {filteredData.map((movie, index) => (
